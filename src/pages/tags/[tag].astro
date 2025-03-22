@@ -16,7 +16,7 @@ export async function getStaticPaths() {
       post.frontmatter.tags.includes(tag)
     );
     return {
-      param: { tag },
+      params: { tag },
       props: { posts: filteredPosts },
     };
   });
